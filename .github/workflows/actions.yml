@@ -5,11 +5,13 @@ on: [push]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+      - name: checkout
+        uses: actions/checkout@v2
       - name: List files
         run: |
           pwd
-          ls
+          ls -a
       - name: Simple JS Action
         id: greet 
         uses: actions/hello-world-javascript-action@v1
