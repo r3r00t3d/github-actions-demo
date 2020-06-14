@@ -6,7 +6,7 @@ jobs:
   docker-steps:
     runs-on: ubuntu-latest
     container:
-      image: node: 14.4.0-stretch
+      image: node:14.4.0-stretch
     steps:
       - name: Log node version
         run: node -v
