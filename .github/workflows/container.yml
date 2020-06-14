@@ -21,4 +21,4 @@ jobs:
           'Content-Type: application/json' -d 
           '{"username":"hello","address":"dsadsadsa"}'
       - name: Get Users
-        run: curl http://localhost:3001/api/user 
+        run: curl http://localhost:3001/api/users
